@@ -1,5 +1,4 @@
-import LinkCard from "@/components/LinkCard"; //Puash denemesi
-
+import LinkCard from "@/components/LinkCard";
 export default function HomePage() {
   return (
     <main className="flex items-center justify-center min-h-screen bg-gradient-to-br from-[#0F172A] to-[#1E293B] text-white p-4 font-sans">
