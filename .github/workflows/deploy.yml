@@ -1,0 +1,38 @@
+name: Deploy to arifabds.github.io
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install and Build
+        run: |
+          npm install
+          npm run build
+      
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+
+          folder: out
+
+          repository-name: arifabds/arifabds.github.io
+
+          token: ${{ secrets.GH_PAGES_TOKEN }}
+
+          branch: main 
+
+          clean: true 
