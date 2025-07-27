@@ -3,7 +3,7 @@ import Link from 'next/link';
 import FeatureSection from '@/components/FeatureSection';
 import { useEffect } from 'react';
 import HomeButton from '@/components/HomeButton';
-
+//to push
 export default function ContentGeneratorPage() {
 
   useEffect(() => {
