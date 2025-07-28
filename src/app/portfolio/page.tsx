@@ -16,7 +16,7 @@ const projects = [
     title: 'AI-Powered Content Generator (Chrome Extension)',
     description: 'A browser extension that leverages LLMs to generate original content from any webpage. It features a resilient, dual-mode data scraping architecture to bypass anti-bot measures and includes a comprehensive A/B testing and analysis platform using an LLM-as-a-Judge methodology.',
     imageUrl: '/images/ss_1.png',
-    tags: ['Next.js', 'TypeScript', 'Python', 'FastAPI', 'RAG', 'PostgreSQL', 'JWT'],
+    tags: ['Next.js', 'TypeScript', 'Python', 'Flask', 'RAG', 'PostgreSQL', 'JWT'],
     liveUrl: 'https://chromewebstore.google.com/detail/llm-based-content-generat/cpngfebnonodehhbnjmcjdjhbfjjgikb',
     githubUrl: 'https://github.com/arifabds/LLM_Integrated_Chrome_Extension'
   },
@@ -24,7 +24,7 @@ const projects = [
     title: 'LLM Proposal Management System',
     description: 'Developed during a professional internship, this system automates business proposal generation. It analyzes existing documents to create custom user templates and uses RAG to produce context-aware drafts, significantly streamlining the workflow.',
     imageUrl: '/images/ss_7.png',
-    tags: ['Python', 'FastAPI', 'Next.js', 'React Query', 'PostgreSQL', 'Alembic', 'RAG'],
+    tags: ['Python', 'Flask', 'Next.js', 'React Query', 'PostgreSQL', 'Alembic', 'RAG'],
     githubUrl: 'https://github.com/arifabds/LLM_Tabanli_Teklif_Sistemi'
   },
   {
