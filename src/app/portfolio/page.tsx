@@ -28,14 +28,14 @@ const projects = [
     githubUrl: 'https://github.com/arifabds/LLM_Tabanli_Teklif_Sistemi'
   },
   {
-    title: 'LLM Remote Assistant (In Progress)',
+    title: 'LLM Remote Assistant (In Development)',
     description: 'An ambitious full-stack project to control a PC remotely via natural language. The core vision involves an LLM that dynamically generates and executes secure Python scripts in a sandboxed environment, controlled by a cross-platform mobile client.',
-    imageUrl: 'https://placehold.co/600x400/2e2e46/FFFFFF?text=In+Progress',
+    imageUrl: 'https://placehold.co/600x400/2e2e46/FFFFFF?text=In+Development',
     tags: ['Flutter', 'Java', 'Go', 'Rust', 'Python', 'LLM', 'WebSocket', 'System Automation', 'Security'],
     githubUrl: 'https://github.com/arifabds/LLM-Remote-Assistant'
   },
   {
-    title: 'Site-Chat: A B2B/B2C Live Chat SaaS',
+    title: 'Site-Chat: A B2B/B2C Live Chat SaaS (In Development)',
     description: 'Architecting a real-time chat application allowing users to create public/private chat rooms on any URL. This dual-purpose SaaS platform serves individual users (B2C) and provides an embeddable widget for businesses (B2B) to foster community directly on their websites.',
     imageUrl: 'https://placehold.co/600x400/4a2e10/FFFFFF?text=In+Development',
     tags: ['Go', 'Next.js', 'React', 'TypeScript', 'WebSocket', 'PostgreSQL', 'JWT'],
