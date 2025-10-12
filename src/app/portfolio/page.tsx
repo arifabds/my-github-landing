@@ -7,8 +7,8 @@ import Link from 'next/link';
 import ProjectCard from '@/components/ProjectCard';
 import SkillIcon from '@/components/SkillIcon';
 import HomeButton from '@/components/HomeButton';
-import { FaPython, FaReact, FaDocker, FaGitAlt } from "react-icons/fa6";
-import { SiNextdotjs, SiTypescript, SiPostgresql } from "react-icons/si";
+import { FaPython, FaReact, FaDocker, FaGitAlt, FaJava, FaRust } from "react-icons/fa6";
+import { SiNextdotjs, SiTypescript, SiPostgresql, SiGo } from "react-icons/si";
 
 
 const projects = [
@@ -16,7 +16,7 @@ const projects = [
     title: 'AI-Powered Content Generator (Chrome Extension)',
     description: 'A browser extension that leverages LLMs to generate original content from any webpage. It features a resilient, dual-mode data scraping architecture to bypass anti-bot measures and includes a comprehensive A/B testing and analysis platform using an LLM-as-a-Judge methodology.',
     imageUrl: '/images/ss_1.png',
-    tags: ['Next.js', 'TypeScript', 'Python', 'Flask', 'RAG', 'PostgreSQL', 'JWT'],
+    tags: ['Python', 'Vanilla JS', 'HTML/CSS', 'Flask', 'RAG', 'PostgreSQL'],
     liveUrl: 'https://chromewebstore.google.com/detail/llm-based-content-generat/cpngfebnonodehhbnjmcjdjhbfjjgikb',
     githubUrl: 'https://github.com/arifabds/LLM_Integrated_Chrome_Extension'
   },
@@ -31,9 +31,16 @@ const projects = [
     title: 'LLM Remote Assistant (In Progress)',
     description: 'An ambitious full-stack project to control a PC remotely via natural language. The core vision involves an LLM that dynamically generates and executes secure Python scripts in a sandboxed environment, controlled by a cross-platform mobile client.',
     imageUrl: 'https://placehold.co/600x400/2e2e46/FFFFFF?text=In+Progress',
-    tags: ['React Native', 'Python', 'LLM', 'WebSocket', 'System Automation', 'Security'],
+    tags: ['Flutter', 'Java', 'Go', 'Rust', 'Python', 'LLM', 'WebSocket', 'System Automation', 'Security'],
     githubUrl: 'https://github.com/arifabds/LLM-Remote-Assistant'
-  }
+  },
+  {
+    title: 'Site-Chat: A B2B/B2C Live Chat SaaS',
+    description: 'Architecting a real-time chat application allowing users to create public/private chat rooms on any URL. This dual-purpose SaaS platform serves individual users (B2C) and provides an embeddable widget for businesses (B2B) to foster community directly on their websites.',
+    imageUrl: 'https://placehold.co/600x400/4a2e10/FFFFFF?text=In+Development',
+    tags: ['Go', 'Next.js', 'React', 'TypeScript', 'WebSocket', 'PostgreSQL', 'JWT'],
+    githubUrl: 'https://github.com/arifabds/site-chat'
+  },
 ];
 
 export default function PortfolioPage() {
@@ -104,12 +111,15 @@ export default function PortfolioPage() {
       {/* Tech Stack Section */}
       <section id="stack" className="container mx-auto px-8 py-24">
         <h2 className="text-4xl font-bold text-center mb-12">My Tech Stack</h2>
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 max-w-3xl mx-auto">
+        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 max-w-4xl mx-auto"> {/* max-w-3xl -> max-w-4xl olarak genişletildi */}
           <SkillIcon name="Python"><FaPython size={40} color="#3776AB" /></SkillIcon>
           <SkillIcon name="TypeScript"><SiTypescript size={40} color="#3178C6" /></SkillIcon>
+          <SkillIcon name="Go"><SiGo size={40} color="#00ADD8" /></SkillIcon>
+          <SkillIcon name="Java"><FaJava size={40} color="#f89820" /></SkillIcon>
+          <SkillIcon name="Rust"><FaRust size={40} color="#DEA584" /></SkillIcon>
+          <SkillIcon name="PostgreSQL"><SiPostgresql size={40} color="#4169E1" /></SkillIcon>
           <SkillIcon name="React"><FaReact size={40} color="#61DAFB" /></SkillIcon>
           <SkillIcon name="Next.js"><SiNextdotjs size={40} /></SkillIcon>
-          <SkillIcon name="PostgreSQL"><SiPostgresql size={40} color="#4169E1" /></SkillIcon>
           <SkillIcon name="Docker"><FaDocker size={40} color="#2496ED" /></SkillIcon>
           <SkillIcon name="Git"><FaGitAlt size={40} color="#F05032" /></SkillIcon>
         </div>

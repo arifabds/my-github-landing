@@ -41,7 +41,7 @@ export default function RemoteAssistantPage() {
             LLM Remote Assistant
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-            This is a placeholder for a catchy subtitle. Explain how this app controls a PC remotely using natural language commands.
+            An ambitious full-stack project to control a PC remotely via natural language. The core vision involves an LLM that dynamically generates and executes secure Python scripts in a sandboxed environment, controlled by a cross-platform mobile client.
           </p>
           <a
             href="https://github.com/arifabds/LLM-Remote-Assistant"

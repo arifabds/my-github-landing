@@ -1,4 +1,4 @@
-'use client'; 
+'use client';
 import Link from 'next/link';
 import FeatureSection from '@/components/FeatureSection';
 import { useEffect } from 'react';
@@ -13,10 +13,10 @@ export default function ContentGeneratorPage() {
     if (scrollLink && featuresSection) {
       const handleClick = (event: MouseEvent) => {
         event.preventDefault();
-        
+
         featuresSection.scrollIntoView({
-          behavior: 'smooth', 
-          block: 'start'      
+          behavior: 'smooth',
+          block: 'start'
         });
       };
 
@@ -39,20 +39,20 @@ export default function ContentGeneratorPage() {
             AI-Powered Content Generator
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-            This is a placeholder for a catchy subtitle. Explain what your Chrome Extension does in one powerful sentence.
+            A browser extension that leverages LLMs to generate original content from any webpage. It features a resilient, dual-mode data scraping architecture to bypass anti-bot measures and includes a comprehensive A/B testing and analysis platform using an LLM-as-a-Judge methodology.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
-            <a 
+            <a
               href="https://chromewebstore.google.com/detail/llm-based-content-generat/cpngfebnonodehhbnjmcjdjhbfjjgikb"
               target="_blank" rel="noopener noreferrer"
               className="inline-block w-full sm:w-auto px-8 py-4 bg-cyan-500 rounded-lg font-semibold hover:bg-cyan-600 transition-transform hover:scale-105"
             >
               Add to Chrome - It's Free
             </a>
-            <a 
-              href="https://github.com/arifabds/LLM_Integrated_Chrome_Extension" 
+            <a
+              href="https://github.com/arifabds/LLM_Integrated_Chrome_Extension"
               target="_blank" rel="noopener noreferrer"
-              className="inline-block w-full sm:w-auto px-8 py-4 bg-gray-700/50 rounded-lg font-semibold hover:bg-gray-600/70 transition-transform hover:scale-105" 
+              className="inline-block w-full sm:w-auto px-8 py-4 bg-gray-700/50 rounded-lg font-semibold hover:bg-gray-600/70 transition-transform hover:scale-105"
             >
               View on GitHub
             </a>

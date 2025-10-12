@@ -1,7 +1,7 @@
 type LinkCardProps = {
   href: string;
   text: string;
-  glowColor?: 'cyan' | 'purple' | 'green'| 'lavender';
+  glowColor?: 'cyan' | 'purple' | 'green'| 'lavender'| 'orange';
 };
 
 export default function LinkCard({ href, text, glowColor = 'cyan' }: LinkCardProps) {
@@ -10,6 +10,7 @@ export default function LinkCard({ href, text, glowColor = 'cyan' }: LinkCardPro
     purple: 'hover:shadow-purple-500/30 hover:border-purple-500/30',
     green: 'hover:shadow-green-500/30 hover:border-green-500/30',
     lavender: 'hover:shadow-violet-400/20 hover:border-violet-400/20',
+    orange: 'hover:shadow-orange-500/30 hover:border-orange-500/30',
   };
 
   const baseClasses = `

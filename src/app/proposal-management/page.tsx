@@ -39,7 +39,7 @@ export default function ProposalSystemPage() {
             LLM Proposal Management System
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-            This is a placeholder for a catchy subtitle. Explain how this system automates and streamlines the proposal creation process.
+            Developed during a professional internship, this system automates business proposal generation. It analyzes existing documents to create custom user templates and uses RAG to produce context-aware drafts, significantly streamlining the workflow.
           </p>
           <a 
             href="https://github.com/arifabds/LLM_Tabanli_Teklif_Sistemi" 
